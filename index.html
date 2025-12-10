@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Basic page setup -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Himanshu's Tech Blog</title>
+
+    <!-- Main CSS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header section with blog title -->
+    <header class="site-header">
+        <div class="container header-content">
+            <div>
+                <h1 class="site-title">Himanshu's Tech Blog</h1>
+            </div>
+        </div>
+
+        <!-- Navigation bar with links to each blog post + search bar -->
+        <nav class="main-nav">
+            <div class="container nav-inner">
+                <ul class="nav-links">
+                    <li><a href="#post-1">HTML Basics</a></li>
+                    <li><a href="#post-2">CSS Tricks</a></li>
+                    <li><a href="#post-3">JavaScript Power</a></li>
+                </ul>
+
+                <!-- Search bar for filtering posts -->
+                <form id="search-form">
+                    <input type="text" id="search-input" placeholder="Search posts..." aria-label="Search posts">
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main layout: blog posts + sidebar -->
+    <main class="container main-layout">
+        <!-- Blog posts section -->
+        <section class="posts">
+
+            <!-- POST 1 -->
+            <article class="post" id="post-1">
+                <!-- Post image (placeholder) -->
+                <img src="./Images/images.png" alt="Getting started with HTML" class="post-image">
+
+                <!-- Post content -->
+                <div class="post-content">
+                    <h2 class="post-title">Getting Started with HTML</h2>
+
+                    <!-- Date of publication -->
+                    <p class="post-meta">
+                        Published on
+                        <time datetime="2025-12-10">10 December 2025</time>
+                        · Category: HTML
+                    </p>
+
+                    <p>
+                        HTML (HyperText Markup Language) is the skeleton of every website.
+                        It tells the browser what each part of the page means: headings,
+                        paragraphs, images, links and more. In this post we look at the
+                        basic structure of an HTML document and the most important tags
+                        you will use in almost every project.
+                    </p>
+                    <p>
+                        A typical page starts with the <code>&lt;!DOCTYPE html&gt;</code>
+                        declaration, followed by the <code>&lt;html&gt;</code>,
+                        <code>&lt;head&gt;</code>, and <code>&lt;body&gt;</code> sections.
+                        Inside the body you place content like headings, paragraphs and
+                        images. Once you understand these basics you can slowly build more
+                        complex layouts using lists, tables and forms.
+                    </p>
+                </div>
+
+                <!-- Comment section for post 1 -->
+                <section class="comments">
+                    <h3>Comments</h3>
+
+                    <!-- Where new comments will be displayed -->
+                    <ul class="comment-list"></ul>
+
+                    <!-- Form for adding a comment -->
+                    <form class="comment-form">
+                        <label>
+                            Name:
+                            <input type="text" class="comment-name" placeholder="Your name (optional)">
+                        </label>
+
+                        <label>
+                            Comment:
+                            <textarea class="comment-message" rows="3"
+                                placeholder="Write your comment here..."></textarea>
+                        </label>
+
+                        <button type="submit" class="btn">Post Comment</button>
+                    </form>
+                </section>
+            </article>
+
+            <!-- POST 2 -->
+            <article class="post" id="post-2">
+                <img src="./Images/css-tips-big.png" alt="CSS tips and tricks" class="post-image">
+
+                <div class="post-content">
+                    <h2 class="post-title">Simple CSS Tricks to Improve Any Page</h2>
+
+                    <p class="post-meta">
+                        Published on
+                        <time datetime="2025-12-05">5 December 2025</time>
+                        · Category: CSS
+                    </p>
+
+                    <p>
+                        CSS controls the look and feel of your website. With just a few
+                        rules you can dramatically improve the design of a simple HTML
+                        page. In this post we will focus on spacing, typography and
+                        colors, because these three things have the biggest impact on
+                        your layout.
+                    </p>
+                    <p>
+                        Use margins and padding to give your content room to breathe.
+                        Set a base font-size that is comfortable to read and choose no
+                        more than two or three font families for the whole site.
+                        Finally, pick a main accent color and use it for buttons, links
+                        and highlights to keep your design consistent.
+                    </p>
+                </div>
+
+                <section class="comments">
+                    <h3>Comments</h3>
+                    <ul class="comment-list"></ul>
+
+                    <form class="comment-form">
+                        <label>
+                            Name:
+                            <input type="text" class="comment-name" placeholder="Your name (optional)">
+                        </label>
+
+                        <label>
+                            Comment:
+                            <textarea class="comment-message" rows="3"
+                                placeholder="Write your comment here..."></textarea>
+                        </label>
+
+                        <button type="submit" class="btn">Post Comment</button>
+                    </form>
+                </section>
+            </article>
+
+            <!-- POST 3 -->
+            <article class="post" id="post-3">
+                <img src="./Images/JavaScript-Symbol.webp" alt="JavaScript code on a screen" class="post-image">
+
+                <div class="post-content">
+                    <h2 class="post-title">Why Learning JavaScript Is Worth It</h2>
+
+                    <p class="post-meta">
+                        Published on
+                        <time datetime="2025-11-30">30 November 2025</time>
+                        · Category: JavaScript
+                    </p>
+
+                    <p>
+                        JavaScript makes web pages alive. It can react to user actions,
+                        change the content on the page, validate forms and connect to
+                        external APIs. If you already know some HTML and CSS, learning
+                        JavaScript is the next step towards becoming a front-end
+                        developer.
+                    </p>
+                    <p>
+                        Start with variables, data types and functions. Then learn how
+                        to access and modify the DOM (Document Object Model) using
+                        methods like <code>querySelector</code>. With practice you will
+                        be able to build interactive components such as sliders,
+                        dropdown menus and small games.
+                    </p>
+                </div>
+
+                <section class="comments">
+                    <h3>Comments</h3>
+                    <ul class="comment-list"></ul>
+
+                    <form class="comment-form">
+                        <label>
+                            Name:
+                            <input type="text" class="comment-name" placeholder="Your name (optional)">
+                        </label>
+
+                        <label>
+                            Comment:
+                            <textarea class="comment-message" rows="3"
+                                placeholder="Write your comment here..."></textarea>
+                        </label>
+
+                        <button type="submit" class="btn">Post Comment</button>
+                    </form>
+                </section>
+            </article>
+        </section>
+
+        <!-- Sidebar with extra features -->
+        <aside class="sidebar">
+            <section class="sidebar-section">
+                <h3>About This Blog</h3>
+                <p>
+                    This is a demo blog created as a front-end project using HTML, CSS
+                    and JavaScript. It focuses on basic web-development concepts and
+                    clean design.
+                </p>
+            </section>
+
+            <section class="sidebar-section">
+                <h3>Categories</h3>
+                <ul class="category-list">
+                    <li>HTML Basics</li>
+                    <li>CSS &amp; Design</li>
+                    <li>JavaScript</li>
+                    <li>Student Life</li>
+                </ul>
+            </section>
+
+            <section class="sidebar-section">
+                <h3>Share This Blog</h3>
+                <!-- Social sharing buttons (dummy links) -->
+                <div class="social-buttons">
+                    <a href="#" class="btn small">Share on Twitter</a>
+                    <a href="#" class="btn small">Share on Facebook</a>
+                    <a href="#" class="btn small">Copy Link</a>
+                </div>
+            </section>
+        </aside>
+    </main>
+
+    <!-- Footer with contact information -->
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <p>&copy; 2025 Himanshu's Tech Blog. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript file for interactivity (comments, search, etc.) -->
+    <script src="script.js"></script>
+</body>
+
+</html>
